@@ -1,0 +1,71 @@
+#title {
+	margin: 20px 0;
+	text-align: center;
+	font-size: 24px;
+	font-family: Microsoft YaHei;
+	font-weight: bold;
+}
+.form {
+	display: block;
+	text-align: center;
+}
+
+#input-todo {
+	outline: none;
+	border-radius: 5px;
+	width: 50%;
+	height: 30px;
+}
+
+#submit-todo {
+	display: inline-block;
+	padding: 10px 10px; 
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+#submit-todo:active {
+	background: #ddd;
+}
+
+.tabbar {
+	display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+	text-align: center;
+}
+.tabbar a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 10px; 
+	border: 1px solid #ddd;
+	border-radius: 3px;
+    color: #888;
+    margin-right: 20px;
+}
+
+.todo-content-wrap {
+	width: 60%;
+	margin: 10px auto;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+
+.todo-content-wrap ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+.todo-item {
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 20px;
+}
