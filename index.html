@@ -10,44 +10,34 @@
 	<script data-main="./js/main.js" src="js/libs/require-2.1.11.js"></script>
 </head>
 <body>
+	<!-- tabbar -->
+	<div class="tabbar">
+		<a href="#history" class="history">What I have done?</a>
+		<a href="#" class="history">Return my todo list.</a>
+	</div>
+
+<div class="container">
 	<div id="title">My Todo List</div>
 	<div class="main-container">
 		<form class="form">
 			<input type="text" id="input-todo"></input>
 			<a id="submit-todo" >Do It!</a>
 		</form>
-
-		<div class="todo-content-wrap">
-			<ul>
-				<li class="todo-item">
-					<input type="checkbox"></input>
-					<span>买菜去</span>
-				</li>
-				<li class="todo-item">
-					<input type="checkbox"></input>
-					<span>买菜去</span>
-				</li>
-			</ul>
-		</div>
 	</div>
-	
-
-	<!-- tabbar -->
-	<div class="tabbar">
-		<a href="#history" class="history">What I have done?</a>
-		<a href="#history" class="history">Return my todo list.</a>
-	</div>
-
-	<script type="text/html" id="todo-content">
-		<ul>
-			<% for(var i = 0; i < data.length; i++) {%>
-				<li class="todo-item">
-					<input type="checkbox"></input>
-					<span>买菜去</span>
+	<div class="todo-content-wrap">
+		<ul class="todo-content">
+			<script type="text/html" id="todo-content">
+				<li class="todo-item" id="item_<%= data.id %>" >
+					<input type="checkbox" class="check" data-relid=<%= data.id %>></input>
+					<span><%= data.content %></span>
 				</li>
-			<% } %>
+			</script>
 		</ul>
-	</script>
+	</div>
+</div>
+	
+		
+	
 
 </body>
 </html>
